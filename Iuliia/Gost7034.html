@@ -228,8 +228,27 @@
     Overview
   </h2>
 
-  <p>The <code><a href="../Iuliia/Gost7034.html">Gost7034</a></code> module provides transliteration (<code>.translate</code>) using
+  <p>The <code><a href="../Iuliia/Gost7034.html">Gost7034</a></code> module provides transliteration (<code><a href="../Iuliia/Engine.html#translate%28string%3AString%29%3AString-instance-method">Engine.translate</a></code>) using
 the GOST R 7.0.34-2014 transliteration schema.</p>
+<p><a href="https://dangry.ru/iuliia/gost-7034/">More information</a> (in Russian)</p>
+<h3><a id="comments" class="anchor" href="#comments">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Comments</h3>
+<p>This schema defines alternatives for many letters, but does not specify when to use which:</p>
+<ul>
+<li>е → e  (ye)</li>
+<li>ё → yo (jo)</li>
+<li>й → j  (i,y)</li>
+<li>х → x  (kh)</li>
+<li>ц → c  (tz,cz)</li>
+<li>ъ → '' (empty)</li>
+<li>ь → '  (empty)</li>
+<li>ю → yu (ju)
+я → ya (ja)</li>
+</ul>
+<p>Iuliia uses the first of suggested translations for each such letter.</p>
 <h3><a id="examples" class="anchor" href="#examples">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
@@ -289,7 +308,7 @@ the GOST R 7.0.34-2014 transliteration schema.</p>
   </h2>
   
     
-      <a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/gost_7034.cr#L16" target="_blank">
+      <a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/gost_7034.cr#L34" target="_blank">
         iuliia/schemas/gost_7034.cr
       </a>
     
@@ -387,7 +406,7 @@ the GOST R 7.0.34-2014 transliteration schema.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/gost_7034.cr#L101" target="_blank">View source</a>]
+          [<a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/gost_7034.cr#L119" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -408,7 +427,7 @@ the GOST R 7.0.34-2014 transliteration schema.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/gost_7034.cr#L96" target="_blank">View source</a>]
+          [<a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/gost_7034.cr#L114" target="_blank">View source</a>]
         
       </div>
     </div>

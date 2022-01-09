@@ -228,8 +228,20 @@
     Overview
   </h2>
 
-  <p>The <code><a href="../Iuliia/Mvd310Fr.html">Mvd310Fr</a></code> module provides transliteration (<code>.translate</code>) using
+  <p>The <code><a href="../Iuliia/Mvd310Fr.html">Mvd310Fr</a></code> module provides transliteration (<code><a href="../Iuliia/Engine.html#translate%28string%3AString%29%3AString-instance-method">Engine.translate</a></code>) using
 the MVD 310-1997 transliteration schema.</p>
+<p><a href="https://dangry.ru/iuliia/mvd-310/">More information</a> (in Russian)</p>
+<h3><a id="comments" class="anchor" href="#comments">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Comments</h3>
+<p>This schema defines the following rule for the French mapping:</p>
+<blockquote>
+<p><code>С</code> between two vowels → <code>SS</code></p>
+</blockquote>
+<p>There is no such rule in other schemas, and MVD-310 itself is deprecated, so
+I decided to ignore this specific rule for the sake of code simplicity.</p>
 <h3><a id="examples" class="anchor" href="#examples">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
@@ -304,7 +316,7 @@ the MVD 310-1997 transliteration schema.</p>
   </h2>
   
     
-      <a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/mvd_310_fr.cr#L31" target="_blank">
+      <a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/mvd_310_fr.cr#L42" target="_blank">
         iuliia/schemas/mvd_310_fr.cr
       </a>
     
@@ -402,7 +414,7 @@ the MVD 310-1997 transliteration schema.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/mvd_310_fr.cr#L140" target="_blank">View source</a>]
+          [<a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/mvd_310_fr.cr#L151" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -423,7 +435,7 @@ the MVD 310-1997 transliteration schema.</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/kandayo/iuliia-cr/blob/9893ba54aabe79478d8c97cf25e8c41cd3c60efa/src/iuliia/schemas/mvd_310_fr.cr#L135" target="_blank">View source</a>]
+          [<a href="https://github.com/kandayo/iuliia-cr/blob/8f916ac9ae4a78d8f82ea43db73e2c2f84566b5c/src/iuliia/schemas/mvd_310_fr.cr#L146" target="_blank">View source</a>]
         
       </div>
     </div>
