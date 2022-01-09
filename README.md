@@ -32,6 +32,22 @@ Runtime                                          | Throughput            |
 [Go](https://github.com/mehanizm/iuliia-go)      | 591,711 words/sec     |
 [Ruby](https://github.com/adnikiforov/iuliia-rb) | 32,269 words/sec      |
 
+## REPL
+
+In the `examples` folder you can find a small REPL to play with.
+
+```
+$ crystal examples/repl.cr
+
+[iuliia] >> Кто твой любимый преподаватель?
+=> Kto tvoy lyubimy prepodavatel?
+
+[iuliia] >> Кафе находится вниз по лестнице
+=> Kafe nakhoditsya vniz po lestnitse
+
+[iuliia] >>
+```
+
 ## Supported schemas
 
 ```cr
