@@ -1,0 +1,4 @@
+# See https://git-scm.com/docs/gitattributes for more about git attribute files.
+
+# Embedded crystal (ECR)
+*.ecr text diff=crystal linguist-language=Crystal
