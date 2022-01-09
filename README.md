@@ -4,7 +4,10 @@ Cyrillic → Latin transliteration for Crystal.
 
 The library includes all main international and Russian transliteration
 standards. For schema details and other information, see
-https://dangry.ru/iuliia (in Russian).
+https://github.com/nalgeon/iuliia (schemas ❤️)
+and https://dangry.ru/iuliia (in Russian).
+
+[![CI](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml)
 
 ## Quickstart
 
@@ -26,7 +29,7 @@ Iuliia::IcaoDoc9303.translate("Фёдор Достоевский")
 
 ## Performance
 
-Runtime                                          | Throughput            |
+Library                                          | Throughput            |
 -------------------------------------------------|-----------------------|
 **Crystal**                                      | **514,527 words/sec** |
 [Go](https://github.com/mehanizm/iuliia-go)      | 591,711 words/sec     |
