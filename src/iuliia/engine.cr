@@ -2,27 +2,30 @@
 
 module Iuliia
   module Engine
-    abstract def standard_rules_mapping : Hash(String, String)
-    abstract def previous_characters_rules_mapping : Hash(String, String)
-    abstract def next_characters_rules_mapping : Hash(String, String)
-    abstract def special_word_endings_rules_mapping : Hash(String, String)
+    private WORD_ENDING_LENGTH = 2
+    private SPLITTER           = /\b/
+
+    private abstract def standard_rules_mapping : Hash(String, String)
+    private abstract def previous_characters_rules_mapping : Hash(String, String)
+    private abstract def next_characters_rules_mapping : Hash(String, String)
+    private abstract def special_word_endings_rules_mapping : Hash(String, String)
 
     def translate(string : String) : String
       String.build do |io|
-        words = split_string_into_words(string)
+        words = split_string_into_meaningful_units(string)
         words.each do |word|
           io << transliterate_word(word)
         end
       end
     end
 
-    private def split_string_into_words(string)
-      string.split(/\b/)
+    private def split_string_into_meaningful_units(string)
+      string.split(SPLITTER)
     end
 
     private def transliterate_word(word)
       stem, ending = split_word_stem_and_word_ending(word)
-      return transliterate_stem(word) if ending.blank?
+      return transliterate_stem(word) if ending.nil?
 
       if romanized_ending = transliterate_special_word_endings(ending)
         romanized_stem = transliterate_stem(stem)
@@ -32,13 +35,12 @@ module Iuliia
       end
     end
 
-    private def split_word_stem_and_word_ending(word, ending_length = 2)
-      if word.size > ending_length
-        stem = word[...(-ending_length)]
-        ending = word[-ending_length..]
+    private def split_word_stem_and_word_ending(word)
+      if word.size > WORD_ENDING_LENGTH
+        stem = word[...(-WORD_ENDING_LENGTH)]
+        ending = word[-WORD_ENDING_LENGTH..]
       else
         stem = word
-        ending = ""
       end
 
       {stem, ending}
