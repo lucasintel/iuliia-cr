@@ -28,6 +28,32 @@ module Iuliia
       Path[SPECS_PATH].join("#{schema.name}_spec.cr")
     end
 
+    private def documentation_for(schema)
+      String.build do |io|
+        io << <<-TXT
+          # The `#{schema.name.camelcase}` module provides transliteration (`.translate`) using
+          # the #{schema.description}.
+          #
+          # ### Examples
+          #
+          # ```\n
+        TXT
+        schema.samples.each_with_index do |(original, result), index|
+          io << <<-TXT
+            # Iuliia::#{schema.name.camelcase}.translate(#{original.inspect})
+            # # => #{result.inspect}
+            #
+          TXT
+          last_example = schema.samples.size == index + 1
+          if last_example
+            io << " ```"
+          else
+            io << "\n"
+          end
+        end
+      end
+    end
+
     private def format_hash(hash : Hash(String, String)?)
       return "{} of String => String" if hash.nil?
 
