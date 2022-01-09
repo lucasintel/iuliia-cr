@@ -5,10 +5,12 @@ module Iuliia
     private WORD_ENDING_LENGTH = 2
     private SPLITTER_REGEX     = /\b/
 
-    private abstract def standard_rules_mapping : Hash(String, String)
-    private abstract def previous_characters_rules_mapping : Hash(String, String)
-    private abstract def next_characters_rules_mapping : Hash(String, String)
-    private abstract def special_word_endings_rules_mapping : Hash(String, String)
+    abstract def name : String
+    abstract def description : String
+    abstract def standard_rules_mapping : Hash(String, String)
+    abstract def previous_characters_rules_mapping : Hash(String, String)
+    abstract def next_characters_rules_mapping : Hash(String, String)
+    abstract def special_word_endings_rules_mapping : Hash(String, String)
 
     # Transliterates the cyrillic *string* into latin characters.
     def translate(string : String) : String
