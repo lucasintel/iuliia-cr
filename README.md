@@ -53,37 +53,35 @@ $ crystal examples/repl.cr
 
 ## Supported schemas
 
-```cr
-{
-  Iuliia::AlaLc         => "ALA-LC transliteration schema",
-  Iuliia::AlaLcAlt      => "ALA-LC transliteration schema",
-  Iuliia::BgnPcgn       => "BGN/PCGN transliteration schema",
-  Iuliia::BgnPcgnAlt    => "BGN/PCGN transliteration schema",
-  Iuliia::Bs2979        => "British Standard 2979:1958 transliteration schema",
-  Iuliia::Bs2979Alt     => "British Standard 2979:1958 transliteration schema",
-  Iuliia::Gost16876     => "GOST 16876-71 (aka GOST 1983) transliteration schema",
-  Iuliia::Gost16876Alt  => "GOST 16876-71 (aka GOST 1983) transliteration schema",
-  Iuliia::Gost52290     => "GOST R 52290-2004 transliteration schema",
-  Iuliia::Gost52535     => "GOST R 52535.1-2006 transliteration schema",
-  Iuliia::Gost7034      => "GOST R 7.0.34-2014 transliteration schema",
-  Iuliia::Gost779       => "GOST 7.79-2000 (aka ISO 9:1995) transliteration schema",
-  Iuliia::Gost779Alt    => "GOST 7.79-2000 (aka ISO 9:1995) transliteration schema",
-  Iuliia::IcaoDoc9303   => "ICAO DOC 9303 transliteration schema",
-  Iuliia::Iso91954      => "ISO/R 9:1954 transliteration schema",
-  Iuliia::Iso91968      => "ISO/R 9:1968 transliteration schema",
-  Iuliia::Iso91968Alt   => "ISO/R 9:1968 transliteration schema",
-  Iuliia::Mosmetro      => "Moscow Metro map transliteration schema",
-  Iuliia::Mvd310        => "MVD 310-1997 transliteration schema",
-  Iuliia::Mvd310Fr      => "MVD 310-1997 transliteration schema",
-  Iuliia::Mvd782        => "MVD 782-2000 transliteration schema",
-  Iuliia::Scientific    => "Scientific transliteration schema",
-  Iuliia::Telegram      => "Telegram transliteration schema",
-  Iuliia::Ungegn1987    => "UNGEGN 1987 V/18 transliteration schema",
-  Iuliia::Wikipedia     => "Wikipedia transliteration schema",
-  Iuliia::YandexMaps    => "Yandex.Maps transliteration schema",
-  Iuliia::YandexMoney   => "Yandex.Money transliteration schema"
-}
-```
+For examples and specifics, please refer to [**📚 the documentation**](https://kandayo.github.io/iuliia-cr).
+
+ - ALA-LC transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/AlaLc.html))
+ - ALA-LC alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/AlaLcAlt.html))
+ - BGN/PCGN transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/BgnPcgn.html))
+ - BGN/PCGN alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/BgnPcgnAlt.html))
+ - British Standard 2979:1958 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Bs2979.html))
+ - British Standard 2979:1958 alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Bs2979Alt.html))
+ - GOST 16876-71 (aka GOST 1983) transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost16876.html))
+ - GOST 16876-71 (aka GOST 1983) alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost16876Alt.html))
+ - GOST R 52290-2004 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost52290.html))
+ - GOST R 52535.1-2006 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost52535.html))
+ - GOST R 7.0.34-2014 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost7034.html))
+ - GOST 7.79-2000 (aka ISO 9:1995) transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost779.html))
+ - GOST 7.79-2000 (aka ISO 9:1995) alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Gost779Alt.html))
+ - ICAO DOC 9303 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/IcaoDoc9303.html))
+ - ISO/R 9:1954 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Iso91954.html))
+ - ISO/R 9:1968 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Iso91968.html))
+ - ISO/R 9:1968 alternative transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Iso91968Alt.html))
+ - **Moscow Metro map transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Mosmetro.html))**
+ - MVD 310-1997 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Mvd310.html))
+ - MVD 310-1997 french transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Mvd310Fr.html))
+ - MVD 782-2000 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Mvd782.html))
+ - Scientific transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Scientific.html))
+ - Telegram transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Telegram.html))
+ - UNGEGN 1988 V/18 transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Ungegn1987.html))
+ - **Wikipedia transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/Wikipedia.html))**
+ - Yandex.Maps transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/YandexMaps.html))
+ - Yandex.Money transliteration schema ([📚 docs](https://kandayo.github.io/iuliia-cr/Iuliia/YandexMoney.html))
 
 ## Installation
 
