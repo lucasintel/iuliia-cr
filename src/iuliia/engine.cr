@@ -41,7 +41,7 @@ module Iuliia
         ending = ""
       end
 
-      [stem, ending]
+      {stem, ending}
     end
 
     private def transliterate_stem(word)

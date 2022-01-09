@@ -31,7 +31,7 @@ Iuliia::IcaoDoc9303.translate("Фёдор Достоевский")
 
 Library                                          | Throughput            |
 -------------------------------------------------|-----------------------|
-**Crystal**                                      | **514,527 words/sec** |
+**Crystal**                                      | **544,680 words/sec** |
 [Go](https://github.com/mehanizm/iuliia-go)      | 591,711 words/sec     |
 [Ruby](https://github.com/adnikiforov/iuliia-rb) | 32,269 words/sec      |
 
