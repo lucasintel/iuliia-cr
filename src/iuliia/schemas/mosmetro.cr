@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Mosmetro` module provides transliteration (`.translate`) using
+  # The `Mosmetro` module provides transliteration (`Engine.translate`) using
   # the Moscow Metro map transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/mosmetro/) (in Russian)
   #
   # ### Examples
   #

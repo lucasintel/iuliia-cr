@@ -7,6 +7,8 @@ DEFINITION_TEMPLATE = "#{__DIR__}/templates/schema.ecr"
 SPEC_TEMPLATE       = "#{__DIR__}/templates/schema_spec.ecr"
 AVAILABLE_SCHEMAS   = "#{__DIR__}/schemas/*.json"
 
+DOCUMENTATION_COMMENT_UNORDERED_LIST_REGEX = /^\s*[->]?\s/
+
 module Iuliia
   module SchemaImporter
     extend self
@@ -31,9 +33,44 @@ module Iuliia
     private def documentation_for(schema)
       String.build do |io|
         io << <<-TXT
-          # The `#{schema.name.camelcase}` module provides transliteration (`.translate`) using
+          # The `#{schema.name.camelcase}` module provides transliteration (`Engine.translate`) using
           # the #{schema.description}.
-          #
+          #\n
+        TXT
+        io << <<-TXT
+          # [More information](#{schema.url}) (in Russian)
+          #\n
+        TXT
+        if comments = schema.comments
+          io << <<-TXT
+            # ### Comments
+            #\n
+          TXT
+          comments.each_with_index do |comment, index|
+            line_is_a_list_item = comment =~ DOCUMENTATION_COMMENT_UNORDERED_LIST_REGEX
+            next_comment = comments[index + 1]?
+            next_comment_is_a_list_item = next_comment =~ DOCUMENTATION_COMMENT_UNORDERED_LIST_REGEX
+            if line_is_a_list_item && next_comment_is_a_list_item
+              comment = comment.gsub(/^\s*[->]?\s/, " - ")
+              io << <<-TXT
+                # #{comment}\n
+              TXT
+            else
+              last_line_continuation = comment.ends_with?(',')
+              if last_line_continuation
+                io << <<-TXT
+                  # #{comment}\n
+                TXT
+              else
+                io << <<-TXT
+                  # #{comment}
+                  #\n
+                TXT
+              end
+            end
+          end
+        end
+        io << <<-TXT
           # ### Examples
           #
           # ```\n

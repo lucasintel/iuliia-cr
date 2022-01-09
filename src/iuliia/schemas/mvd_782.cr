@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Mvd782` module provides transliteration (`.translate`) using
+  # The `Mvd782` module provides transliteration (`Engine.translate`) using
   # the MVD 782-2000 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/mvd-782/) (in Russian)
   #
   # ### Examples
   #

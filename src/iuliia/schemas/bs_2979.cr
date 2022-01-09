@@ -4,8 +4,19 @@
 require "../engine"
 
 module Iuliia
-  # The `Bs2979` module provides transliteration (`.translate`) using
+  # The `Bs2979` module provides transliteration (`Engine.translate`) using
   # the British Standard 2979:1958 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/bs-2979/) (in Russian)
+  #
+  # ### Comments
+  #
+  # This schema defines two alternative translations for `Ы`:
+  #
+  #  - `Ы` → `Ȳ` (used by the Oxford University Press)
+  #   - `Ы` → `UI` (used by the British Library).
+  #
+  # `iuliia` uses `Ы` → `Ȳ`.
   #
   # ### Examples
   #

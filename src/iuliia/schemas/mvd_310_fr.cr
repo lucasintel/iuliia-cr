@@ -4,8 +4,19 @@
 require "../engine"
 
 module Iuliia
-  # The `Mvd310Fr` module provides transliteration (`.translate`) using
+  # The `Mvd310Fr` module provides transliteration (`Engine.translate`) using
   # the MVD 310-1997 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/mvd-310/) (in Russian)
+  #
+  # ### Comments
+  #
+  # This schema defines the following rule for the French mapping:
+  #
+  # > `С` between two vowels → `SS`
+  #
+  # There is no such rule in other schemas, and MVD-310 itself is deprecated, so
+  # I decided to ignore this specific rule for the sake of code simplicity.
   #
   # ### Examples
   #

@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Iso91954` module provides transliteration (`.translate`) using
+  # The `Iso91954` module provides transliteration (`Engine.translate`) using
   # the ISO/R 9:1954 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/iso-9-1954/) (in Russian)
   #
   # ### Examples
   #

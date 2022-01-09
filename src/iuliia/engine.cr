@@ -3,13 +3,14 @@
 module Iuliia
   module Engine
     private WORD_ENDING_LENGTH = 2
-    private SPLITTER           = /\b/
+    private SPLITTER_REGEX     = /\b/
 
     private abstract def standard_rules_mapping : Hash(String, String)
     private abstract def previous_characters_rules_mapping : Hash(String, String)
     private abstract def next_characters_rules_mapping : Hash(String, String)
     private abstract def special_word_endings_rules_mapping : Hash(String, String)
 
+    # Transliterates the cyrillic *string* into latin characters.
     def translate(string : String) : String
       String.build do |io|
         words = split_string_into_meaningful_units(string)
@@ -20,7 +21,7 @@ module Iuliia
     end
 
     private def split_string_into_meaningful_units(string)
-      string.split(SPLITTER)
+      string.split(SPLITTER_REGEX)
     end
 
     private def transliterate_word(word)

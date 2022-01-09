@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Gost779Alt` module provides transliteration (`.translate`) using
+  # The `Gost779Alt` module provides transliteration (`Engine.translate`) using
   # the GOST 7.79-2000 (aka ISO 9:1995) transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/gost-779/) (in Russian)
   #
   # ### Examples
   #

@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Gost52535` module provides transliteration (`.translate`) using
+  # The `Gost52535` module provides transliteration (`Engine.translate`) using
   # the GOST R 52535.1-2006 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/gost-52535/) (in Russian)
   #
   # ### Examples
   #

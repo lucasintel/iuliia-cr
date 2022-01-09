@@ -4,8 +4,26 @@
 require "../engine"
 
 module Iuliia
-  # The `Gost7034` module provides transliteration (`.translate`) using
+  # The `Gost7034` module provides transliteration (`Engine.translate`) using
   # the GOST R 7.0.34-2014 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/gost-7034/) (in Russian)
+  #
+  # ### Comments
+  #
+  # This schema defines alternatives for many letters, but does not specify when to use which:
+  #
+  #  - е → e  (ye)
+  #  - ё → yo (jo)
+  #  - й → j  (i,y)
+  #  - х → x  (kh)
+  #  - ц → c  (tz,cz)
+  #  - ъ → '' (empty)
+  #  - ь → '  (empty)
+  #  - ю → yu (ju)
+  #   я → ya (ja)
+  #
+  # Iuliia uses the first of suggested translations for each such letter.
   #
   # ### Examples
   #

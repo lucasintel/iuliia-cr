@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Mvd310` module provides transliteration (`.translate`) using
+  # The `Mvd310` module provides transliteration (`Engine.translate`) using
   # the MVD 310-1997 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/mvd-310/) (in Russian)
   #
   # ### Examples
   #

@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `YandexMaps` module provides transliteration (`.translate`) using
+  # The `YandexMaps` module provides transliteration (`Engine.translate`) using
   # the Yandex.Maps transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/yandex-maps/) (in Russian)
   #
   # ### Examples
   #

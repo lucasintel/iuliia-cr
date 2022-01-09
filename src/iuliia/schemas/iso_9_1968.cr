@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Iso91968` module provides transliteration (`.translate`) using
+  # The `Iso91968` module provides transliteration (`Engine.translate`) using
   # the ISO/R 9:1968 transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/iso-9-1968/) (in Russian)
   #
   # ### Examples
   #

@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `BgnPcgn` module provides transliteration (`.translate`) using
+  # The `BgnPcgn` module provides transliteration (`Engine.translate`) using
   # the BGN/PCGN transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/bgn-pcgn/) (in Russian)
   #
   # ### Examples
   #

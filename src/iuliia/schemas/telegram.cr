@@ -4,8 +4,10 @@
 require "../engine"
 
 module Iuliia
-  # The `Telegram` module provides transliteration (`.translate`) using
+  # The `Telegram` module provides transliteration (`Engine.translate`) using
   # the Telegram transliteration schema.
+  #
+  # [More information](https://dangry.ru/iuliia/telegram/) (in Russian)
   #
   # ### Examples
   #
