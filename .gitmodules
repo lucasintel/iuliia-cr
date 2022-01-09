@@ -1,0 +1,3 @@
+[submodule "schema_importer/schemas"]
+	path = schema_importer/schemas
+	url = git@github.com:nalgeon/iuliia.git
