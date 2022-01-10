@@ -7,7 +7,7 @@ module Iuliia
   # The `Scientific` module provides transliteration (`Engine.translate`) using
   # the Scientific transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/scientific/) (in Russian)
+  # [More information](https://iuliia.ru/scientific/) (in Russian)
   #
   # ### Examples
   #

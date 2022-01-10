@@ -7,7 +7,7 @@ module Iuliia
   # The `Wikipedia` module provides transliteration (`Engine.translate`) using
   # the Wikipedia transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/wikipedia/) (in Russian)
+  # [More information](https://iuliia.ru/wikipedia/) (in Russian)
   #
   # ### Examples
   #

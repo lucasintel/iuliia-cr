@@ -7,7 +7,7 @@ module Iuliia
   # The `Gost52290` module provides transliteration (`Engine.translate`) using
   # the GOST R 52290-2004 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/gost-52290/) (in Russian)
+  # [More information](https://iuliia.ru/gost-52290/) (in Russian)
   #
   # ### Examples
   #

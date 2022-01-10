@@ -7,7 +7,7 @@ module Iuliia
   # The `BgnPcgn` module provides transliteration (`Engine.translate`) using
   # the BGN/PCGN transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/bgn-pcgn/) (in Russian)
+  # [More information](https://iuliia.ru/bgn-pcgn/) (in Russian)
   #
   # ### Examples
   #

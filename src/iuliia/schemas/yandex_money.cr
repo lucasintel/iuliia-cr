@@ -7,7 +7,7 @@ module Iuliia
   # The `YandexMoney` module provides transliteration (`Engine.translate`) using
   # the Yandex.Money transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/yandex-money/) (in Russian)
+  # [More information](https://iuliia.ru/yandex-money/) (in Russian)
   #
   # ### Examples
   #

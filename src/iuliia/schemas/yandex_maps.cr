@@ -7,7 +7,7 @@ module Iuliia
   # The `YandexMaps` module provides transliteration (`Engine.translate`) using
   # the Yandex.Maps transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/yandex-maps/) (in Russian)
+  # [More information](https://iuliia.ru/yandex-maps/) (in Russian)
   #
   # ### Examples
   #

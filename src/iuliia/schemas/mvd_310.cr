@@ -7,7 +7,7 @@ module Iuliia
   # The `Mvd310` module provides transliteration (`Engine.translate`) using
   # the MVD 310-1997 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/mvd-310/) (in Russian)
+  # [More information](https://iuliia.ru/mvd-310/) (in Russian)
   #
   # ### Examples
   #

@@ -7,7 +7,7 @@ module Iuliia
   # The `Gost7034` module provides transliteration (`Engine.translate`) using
   # the GOST R 7.0.34-2014 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/gost-7034/) (in Russian)
+  # [More information](https://iuliia.ru/gost-7034/) (in Russian)
   #
   # ### Comments
   #
@@ -23,7 +23,7 @@ module Iuliia
   #  - ю → yu (ju)
   #   я → ya (ja)
   #
-  # Iuliia uses the first of suggested translations for each such letter.
+  # `iuliia` uses the first of suggested translations for each such letter.
   #
   # ### Examples
   #

@@ -7,7 +7,7 @@ module Iuliia
   # The `IcaoDoc9303` module provides transliteration (`Engine.translate`) using
   # the ICAO DOC 9303 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/icao-doc-9303/) (in Russian)
+  # [More information](https://iuliia.ru/icao-doc-9303/) (in Russian)
   #
   # ### Examples
   #

@@ -7,7 +7,7 @@ module Iuliia
   # The `AlaLc` module provides transliteration (`Engine.translate`) using
   # the ALA-LC transliteration schema..
   #
-  # [More information](https://dangry.ru/iuliia/ala-lc/) (in Russian)
+  # [More information](https://iuliia.ru/ala-lc/) (in Russian)
   #
   # ### Examples
   #

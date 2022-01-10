@@ -7,7 +7,7 @@ module Iuliia
   # The `Ungegn1987` module provides transliteration (`Engine.translate`) using
   # the UNGEGN 1987 V/18 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/ungegn-1987/) (in Russian)
+  # [More information](https://iuliia.ru/ungegn-1987/) (in Russian)
   #
   # ### Examples
   #

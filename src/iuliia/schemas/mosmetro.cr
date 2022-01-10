@@ -7,7 +7,7 @@ module Iuliia
   # The `Mosmetro` module provides transliteration (`Engine.translate`) using
   # the Moscow Metro map transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/mosmetro/) (in Russian)
+  # [More information](https://iuliia.ru/mosmetro/) (in Russian)
   #
   # ### Examples
   #

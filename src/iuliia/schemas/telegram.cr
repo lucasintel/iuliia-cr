@@ -7,7 +7,7 @@ module Iuliia
   # The `Telegram` module provides transliteration (`Engine.translate`) using
   # the Telegram transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/telegram/) (in Russian)
+  # [More information](https://iuliia.ru/telegram/) (in Russian)
   #
   # ### Examples
   #

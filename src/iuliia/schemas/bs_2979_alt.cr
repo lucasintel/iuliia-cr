@@ -7,7 +7,7 @@ module Iuliia
   # The `Bs2979Alt` module provides transliteration (`Engine.translate`) using
   # the British Standard 2979:1958 transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/bs-2979/) (in Russian)
+  # [More information](https://iuliia.ru/bs-2979/) (in Russian)
   #
   # ### Examples
   #

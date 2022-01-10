@@ -7,7 +7,7 @@ module Iuliia
   # The `Gost16876` module provides transliteration (`Engine.translate`) using
   # the GOST 16876-71 (aka GOST 1983) transliteration schema.
   #
-  # [More information](https://dangry.ru/iuliia/gost-16876/) (in Russian)
+  # [More information](https://iuliia.ru/gost-16876/) (in Russian)
   #
   # ### Examples
   #
