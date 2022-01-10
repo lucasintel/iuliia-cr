@@ -5,7 +5,7 @@ Cyrillic → Latin transliteration for Crystal.
 The library includes all main international and Russian transliteration
 standards. For schema details and other information, see
 https://github.com/nalgeon/iuliia (schemas ❤️)
-and https://dangry.ru/iuliia (in Russian).
+and https://iuliia.ru (in Russian).
 
 [![CI](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml)
 
