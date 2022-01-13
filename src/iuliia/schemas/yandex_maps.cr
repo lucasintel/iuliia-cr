@@ -13,7 +13,7 @@ module Iuliia
   #
   # ```
   # Iuliia::YandexMaps.translate("Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю")
-  # # => "Yuliya, syesh eschyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu"
+  # # => "Yuliya, syesh yeschyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu"
   #
   # Iuliia::YandexMaps.translate("Россия, город Йошкар-Ола, улица Яна Крастыня")
   # # => "Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya"
@@ -32,6 +32,15 @@ module Iuliia
   #
   # Iuliia::YandexMaps.translate("Новый Уренгой")
   # # => "Noviy Urengoy"
+  #
+  # Iuliia::YandexMaps.translate("Елабуга")
+  # # => "Yelabuga"
+  #
+  # Iuliia::YandexMaps.translate("Бабаево")
+  # # => "Babayevo"
+  #
+  # Iuliia::YandexMaps.translate("Белово")
+  # # => "Belovo"
   # ```
   module YandexMaps
     include Iuliia::Engine
@@ -108,8 +117,32 @@ module Iuliia
       "Ю" => "Yu",
       "Я" => "Ya",
     }
-    private PREVIOUS_CHARACTERS_RULES_MAPPING = {} of String => String
-    private NEXT_CHARACTERS_RULES_MAPPING     = {
+    private PREVIOUS_CHARACTERS_RULES_MAPPING = {
+      "е"  => "ye",
+      "ае" => "ye",
+      "ие" => "ye",
+      "ое" => "ye",
+      "уе" => "ye",
+      "эе" => "ye",
+      "юе" => "ye",
+      "яе" => "ye",
+      "Е"  => "Ye",
+      "Ае" => "ye",
+      "Ие" => "ye",
+      "Ое" => "ye",
+      "Уе" => "ye",
+      "Эе" => "ye",
+      "Юе" => "ye",
+      "Яе" => "ye",
+      "АЕ" => "Ye",
+      "ИЕ" => "Ye",
+      "ОЕ" => "Ye",
+      "УЕ" => "Ye",
+      "ЭЕ" => "Ye",
+      "ЮЕ" => "Ye",
+      "ЯЕ" => "Ye",
+    }
+    private NEXT_CHARACTERS_RULES_MAPPING = {
       "ъе" => "y",
       "ЪЕ" => "Y",
       "Ъе" => "Y",

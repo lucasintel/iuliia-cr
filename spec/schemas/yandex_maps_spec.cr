@@ -35,7 +35,7 @@ require "../spec_helper"
 describe Iuliia::YandexMaps do
   it "transliterates Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю" do
     cyrilic = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
-    transliteration = "Yuliya, syesh eschyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu"
+    transliteration = "Yuliya, syesh yeschyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu"
 
     Iuliia::YandexMaps.translate(cyrilic).should eq(transliteration)
   end
@@ -78,6 +78,27 @@ describe Iuliia::YandexMaps do
   it "transliterates Новый Уренгой" do
     cyrilic = "Новый Уренгой"
     transliteration = "Noviy Urengoy"
+
+    Iuliia::YandexMaps.translate(cyrilic).should eq(transliteration)
+  end
+
+  it "transliterates Елабуга" do
+    cyrilic = "Елабуга"
+    transliteration = "Yelabuga"
+
+    Iuliia::YandexMaps.translate(cyrilic).should eq(transliteration)
+  end
+
+  it "transliterates Бабаево" do
+    cyrilic = "Бабаево"
+    transliteration = "Babayevo"
+
+    Iuliia::YandexMaps.translate(cyrilic).should eq(transliteration)
+  end
+
+  it "transliterates Белово" do
+    cyrilic = "Белово"
+    transliteration = "Belovo"
 
     Iuliia::YandexMaps.translate(cyrilic).should eq(transliteration)
   end
