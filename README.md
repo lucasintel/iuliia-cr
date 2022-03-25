@@ -1,11 +1,13 @@
 # Iuliia
 
-Cyrillic → Latin transliteration for Crystal.
+🇷🇺Russian Cyrillic → Latin transliteration for Crystal.
 
 The library includes all main international and Russian transliteration
 standards. For schema details and other information, see
 https://github.com/nalgeon/iuliia (schemas ❤️)
 and https://iuliia.ru (in Russian).
+
+For 🇺🇦Ukrainian Cyrillic transliteration, check out [**this library**](https://github.com/kandayo/ukrainian) instead.
 
 [![CI](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kandayo/iuliia-cr/actions/workflows/ci.yml)
 
@@ -17,14 +19,11 @@ require "iuliia"
 Iuliia::Wikipedia.translate("Национальный Технический Университет «Днепровская политехника»")
 # 🇷🇺 => "Natsionalny Tekhnichesky Universitet «Dneprovskaya Politekhnika»"
 
-Iuliia::Wikipedia.translate("Національний Технічний Університет «Дніпровська Політехніка»")
-# 🇺🇦 => "Natsіonalny Tekhnіchny Unіversitet «Dnіprovska Polіtekhnіka»"
-
 Iuliia::Wikipedia.translate("Фёдор Достоевский")
-# => "Fyodor Dostoyevsky"
+# 🇷🇺 => "Fyodor Dostoyevsky"
 
 Iuliia::IcaoDoc9303.translate("Фёдор Достоевский")
-# => "Fedor Dostoevskii"
+# 🇷🇺 => "Fedor Dostoevskii"
 ```
 
 ## Performance
@@ -42,11 +41,11 @@ In the `examples` folder you can find a small REPL to play with.
 ```
 $ crystal examples/repl.cr
 
-[iuliia] >> Кто твой любимый преподаватель?
-=> Kto tvoy lyubimy prepodavatel?
+[iuliia] >> Московский Кремль
+=> Moskovsky Kreml
 
-[iuliia] >> Кафе находится вниз по лестнице
-=> Kafe nakhoditsya vniz po lestnitse
+[iuliia] >> Парк Зарядье
+=> Park Zaryadye
 
 [iuliia] >>
 ```
